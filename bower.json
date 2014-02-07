@@ -1,0 +1,36 @@
+{
+  "name": "angular-recursionhelper",
+  "main": "angular-recursionhelper.min.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/marklagendijk/angular-recursion",
+  "authors": [
+    "Mark Lagendijk <mark@lagendijk.info>"
+  ],
+  "description": "An Angular service which helps with creating recursive directives.",
+  "keywords": [
+    "angular",
+    "angular-service",
+    "angular-recursion",
+    "angular-recursion-helper",
+	"recursion",
+	"recursive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "package.json",
+    "gulpfile.js",
+    "bower_components",
+    "test",
+    "tests",
+    "config"
+  ],
+  "dependencies": {
+    "angular": "~1.2.8"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.8",
+	"jQuery": "2.1.0"
+  }
+}

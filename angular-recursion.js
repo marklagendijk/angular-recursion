@@ -1,4 +1,9 @@
-module.factory('RecursionHelper', ['$compile', function($compile){
+/* 
+ * An Angular service which helps with creating recursive directives.
+ * @author Mark Lagendijk
+ * @license MIT
+ */
+angular.module('RecursionHelper', []).factory('RecursionHelper', ['$compile', function($compile){
 	return {
 		/**
 		 * Manually compiles the element, fixing the recursion loop.
