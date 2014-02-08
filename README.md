@@ -1,4 +1,4 @@
-# angular-recursion-helper
+# angular-recursion
 
 A service which makes it easy possible to have recursive Angular directives.
 
@@ -6,10 +6,10 @@ A service which makes it easy possible to have recursive Angular directives.
 When an Angular directive calls itself, Angular gets into an endless loop. This service provides the logic needed to work around this.
 
 ## Usage
-The service is used by injecting it into your directive and using it in the directives' compile function. The following example shows this. See [this fiddle](http://jsfiddle.net/xUsCc/34/) to see this example running.
+The service is used by injecting it into your directive and using it in the directives' compile function. The following example shows this. See [this Plunker](http://plnkr.co/edit/JAIyolmqPqO9KsynSiZp?p=preview) to see this example running.
 
 ``` javascript
-module.directive("tree", function(RecursionHelper) {
+angular.module('myModule', ['RecursionHelper']).directive("tree", function(RecursionHelper) {
     return {
         restrict: "E",
         scope: {family: '='},
