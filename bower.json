@@ -1,6 +1,6 @@
 {
   "name": "angular-recursionhelper",
-  "main": "angular-recursionhelper.min.js",
+  "main": "angular-recursion.js",
   "version": "1.0.0",
   "homepage": "https://github.com/marklagendijk/angular-recursion",
   "authors": [
