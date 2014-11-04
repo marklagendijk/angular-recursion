@@ -11,7 +11,7 @@ angular.module('RecursionHelper', []).factory('RecursionHelper', ['$compile', fu
 		 * @param [link] A post-link function, or an object with function(s) registered via pre and post properties.
 		 * @returns An object containing the linking functions.
 		 */
-		compile: function(element, link){
+		compile: function(element, link, transclude){
 			// Normalize the link parameter
 			if(angular.isFunction(link)){
 				link = { post: link };
@@ -28,7 +28,7 @@ angular.module('RecursionHelper', []).factory('RecursionHelper', ['$compile', fu
 				post: function(scope, element){
 					// Compile the contents
 					if(!compiledContents){
-						compiledContents = $compile(contents);
+						compiledContents = $compile(contents,transclude);
 					}
 					// Re-add the compiled contents to the element
 					compiledContents(scope, function(clone){

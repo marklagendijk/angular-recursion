@@ -26,13 +26,13 @@ angular.module('myModule', ['RecursionHelper']).directive("tree", function(Recur
                     '<tree family="child"></tree>' +
                 '</li>' +
             '</ul>',
-        compile: function(element) {
+        compile: function(element, attr, transclude) {
             return RecursionHelper.compile(element, function(scope, iElement, iAttrs, controller, transcludeFn){
                 // Define your normal link function here.
                 // Alternative: instead of passing a function,
                 // you can also pass an object with 
                 // a 'pre'- and 'post'-link function.
-            });
+            },transclude);
         }
     };
 });
