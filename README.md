@@ -7,7 +7,7 @@ When an Angular directive calls itself, Angular gets into an endless loop. This 
 
 ## Installation
 1. `bower install angular-recursion --save` or `npm install angular-recursion --save`.
-2. Include `bower_components/angular-recursion/angular-recursion.min.js`.
+2. Include `angular-recursion.min.js`.
 3. Add the `RecursionHelper` module as a dependency.
 4. Inject the `RecursionHelper` service and use it.
 
